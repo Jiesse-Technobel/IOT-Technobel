@@ -18,6 +18,26 @@
         <h5><b><i class="fa fa-dashboard"></i> Info RoadBook</b></h5>
     </header>
 
+    <!-- Map Google avec clé d'API de Jiesse-->
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 37.7831, lng: -122.4039},
+                scrollwheel: true,
+                zoom: 12
+            });
+            var markerOptions = {
+                position: new google.maps.LatLng(37.7831, -122.4039)
+            };
+            var marker = new google.maps.Marker(markerOptions);
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaGvuJiGnbPaRl2y29c102oiQRAPB2b38&callback=initMap" async defer></script>
+    <!-- Fin de GoogleMap -->
+
     <div class="w3-row-padding w3-margin-bottom">
         <div class="w3-quarter">
             <div class="w3-container w3-red w3-padding-16">
