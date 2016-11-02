@@ -1,450 +1,313 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div class="row">
+<html>
+<title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-
-
-    <!-- col -->
-    <div class="col-md-8">
-
-        <!-- tile -->
-        <section class="tile">
-
-            <!-- tile header -->
-            <div class="tile-header bg-greensea dvd dvd-btm">
-                <h1 class="custom-font"><strong>Statistics </strong>Graph</h1>
-                <ul class="controls">
-                    <li>
-                        <a role="button" tabindex="0" class="pickDate">
-                            <span>October 4, 2016 - November 2, 2016</span>&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-
-                        <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                            <i class="fa fa-spinner fa-spin"></i>
-                        </a>
-
-                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                            <li>
-                                <a role="button" tabindex="0" class="tile-toggle">
-                                    <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                    <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a role="button" tabindex="0" class="tile-refresh">
-                                    <i class="fa fa-refresh"></i> Refresh
-                                </a>
-                            </li>
-                            <li>
-                                <a role="button" tabindex="0" class="tile-fullscreen">
-                                    <i class="fa fa-expand"></i> Fullscreen
-                                </a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
-                </ul>
-            </div>
-            <!-- /tile header -->
-
-            <!-- tile widget -->
-            <div class="tile-widget bg-greensea">
-                <div id="statistics-chart" style="height: 250px; padding: 0px; position: relative;"><canvas class="flot-base" width="612" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 612px; height: 250px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 30px; text-align: center;">JAN</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 78px; text-align: center;">FEB</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 124px; text-align: center;">MAR</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 174px; text-align: center;">APR</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 221px; text-align: center;">MAY</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 270px; text-align: center;">JUN</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 320px; text-align: center;">JUL</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 366px; text-align: center;">AUG</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 416px; text-align: center;">SEP</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 462px; text-align: center;">OCT</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 510px; text-align: center;">NOV</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 559px; text-align: center;">DEC</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 210px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 14px; text-align: right;">0</div><div style="position: absolute; top: 157px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 53px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">150</div><div style="position: absolute; top: 1px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">200</div></div></div><canvas class="flot-overlay" width="612" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 612px; height: 250px;"></canvas><div class="legend"><table style="position:absolute;top:0px;right:6px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(224,93,111);overflow:hidden"></div></div></td><td class="legendLabel">Unique Visits</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(97,200,184);overflow:hidden"></div></div></td><td class="legendLabel">Page Views</td></tr></tbody></table></div></div>
-            </div>
-            <!-- /tile widget -->
-
-            <!-- tile body -->
-            <div class="tile-body">
-
-                <!-- row -->
-                <div class="row">
-
-
-                    <!-- col -->
-                    <div class="col-md-8 col-sm-12">
-
-                        <h4 class="underline custom-font mb-20"><strong>Actual</strong> Statistics</h4>
-
-                        <!-- row -->
-                        <div class="row">
-                            <!-- col -->
-                            <div class="col-lg-4 text-center">
-                                <div class="easypiechart" data-percent="100" data-size="140" data-bar-color="#418bca" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
-
-                                    <i class="fa fa-usd fa-4x text-blue" style="line-height: 140px;"></i>
-
-                                    <canvas height="140" width="140"></canvas></div>
-                                <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-blue">6,175</strong> <small class="text-lg text-light text-default lt">Sales</small></p>
-                                <p class="text-light"><i class="fa fa-caret-up text-success"></i> 18% this month</p>
-                            </div>
-                            <!-- /col
-                            <!-- col -->
-                            <div class="col-lg-4 text-center">
-                                <div class="easypiechart" data-percent="75" data-size="140" data-bar-color="#e05d6f" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
-
-                                    <i class="fa fa-eye fa-4x text-lightred" style="line-height: 140px;"></i>
-                                    <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-lightred">8,213</strong> <small class="text-lg text-light text-default lt">Visits</small></p>
-                                    <p class="text-light"><i class="fa fa-caret-down text-warning"></i> 25% this month</p>
-                                    <canvas height="140" width="140"></canvas></div>
-                            </div>
-                            <!-- /col -->
-                            <!-- col -->
-                            <div class="col-lg-4 text-center">
-                                <div class="easypiechart" data-percent="46" data-size="140" data-bar-color="#16a085" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
-
-                                    <i class="fa fa-user fa-4x text-greensea" style="line-height: 140px;"></i>
-                                    <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-greensea">632</strong> <small class="text-lg text-light text-default lt">Users</small></p>
-                                    <p class="text-light"><i class="fa fa-caret-down text-danger"></i> 61% this month</p>
-                                    <canvas height="140" width="140"></canvas></div>
-                            </div>
-                            <!-- /col -->
-                        </div>
-                        <!-- /row -->
-
-                    </div>
-                    <!-- /col -->
-
-
-
-                    <!-- col -->
-                    <div class="col-md-4 col-sm-12">
-
-                        <h4 class="underline custom-font"><strong>Visitors</strong> Statistics</h4>
-
-                        <div class="progress-list">
-                            <div class="details">
-                                <div class="title">America</div>
-                                <div class="description">visitor from america</div>
-                            </div>
-                            <div class="status pull-right">
-                                <span>40</span>%
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="progress-xs not-rounded progress">
-                                <div class="progress-bar progress-bar-dutch" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-list">
-                            <div class="details">
-                                <div class="title">Europe</div>
-                                <div class="description">visitor from europe</div>
-                            </div>
-                            <div class="status pull-right">
-                                <span>38</span>%
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="progress-xs not-rounded progress">
-                                <div class="progress-bar progress-bar-greensea" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
-                                    <span class="sr-only">38%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-list">
-                            <div class="details">
-                                <div class="title">Asia</div>
-                                <div class="description">visitor from asia</div>
-                            </div>
-                            <div class="status pull-right">
-                                <span>12</span>%
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="progress-xs not-rounded progress">
-                                <div class="progress-bar progress-bar-lightred" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
-                                    <span class="sr-only">12%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-list">
-                            <div class="details">
-                                <div class="title">Africa</div>
-                                <div class="description">visitor from africa</div>
-                            </div>
-                            <div class="status pull-right">
-                                <span>7</span>%
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="progress-xs not-rounded progress">
-                                <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%">
-                                    <span class="sr-only">7%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-list">
-                            <div class="details">
-                                <div class="title">Other</div>
-                                <div class="description">visitor from other</div>
-                            </div>
-                            <div class="status pull-right">
-                                <span>6</span>%
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="progress-xs not-rounded progress">
-                                <div class="progress-bar progress-bar-hotpink" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%">
-                                    <span class="sr-only">6%</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /col -->
-
-
-
-
-                </div>
-                <!-- /row -->
-
-            </div>
-            <!-- /tile body -->
-
-        </section>
-        <!-- /tile -->
-
-    </div>
-    <!-- /col -->
-
-
-
-    <!-- col -->
-    <div class="col-md-4">
-
-        <!-- tile -->
-        <section class="tile" fullscreen="isFullscreen02">
-
-            <!-- tile header -->
-            <div class="tile-header dvd dvd-btm">
-                <h1 class="custom-font"><strong>Browser </strong>Usage</h1>
-                <ul class="controls">
-                    <li class="dropdown">
-
-                        <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                            <i class="fa fa-spinner fa-spin"></i>
-                        </a>
-
-                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                            <li>
-                                <a role="button" tabindex="0" class="tile-toggle">
-                                    <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                    <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a role="button" tabindex="0" class="tile-refresh">
-                                    <i class="fa fa-refresh"></i> Refresh
-                                </a>
-                            </li>
-                            <li>
-                                <a role="button" tabindex="0" class="tile-fullscreen">
-                                    <i class="fa fa-expand"></i> Fullscreen
-                                </a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
-                </ul>
-            </div>
-            <!-- /tile header -->
-
-            <!-- tile widget -->
-            <div class="tile-widget">
-                <div id="browser-usage" style="height: 250px"><svg height="250" version="1.1" width="612" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.65625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#00a3d8" d="M306,201.66666666666669A76.66666666666667,76.66666666666667,0,0,0,382.62571285773925,127.50557514776123" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#00a3d8" stroke="#ffffff" d="M306,204.66666666666669A79.66666666666667,79.66666666666667,0,0,0,385.62411031738986,127.60361939267362L420.9385692866088,128.75836272164184A115,115,0,0,1,306,240Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#2fbbe8" d="M382.62571285773925,127.50557514776123A76.66666666666667,76.66666666666667,0,0,0,333.00430527411913,53.24663579705856" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#2fbbe8" stroke="#ffffff" d="M385.62411031738986,127.60361939267362A79.66666666666667,79.66666666666667,0,0,0,334.06099548049775,50.43889545868258L344.74530756721447,22.049520926214456A110,110,0,0,1,415.94124018719106,128.59495564678787Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#72cae7" d="M333.00430527411913,53.24663579705856A76.66666666666667,76.66666666666667,0,0,0,263.4094071538928,61.251908430174154" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#72cae7" stroke="#ffffff" d="M334.06099548049775,50.43889545868258A79.66666666666667,79.66666666666667,0,0,0,261.7428187381756,58.757417890485314L244.89175809036794,33.53534687807597A110,110,0,0,1,344.74530756721447,22.049520926214456Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#d9544f" d="M263.4094071538928,61.251908430174154A76.66666666666667,76.66666666666667,0,0,0,243.69191290140762,80.32920350058663" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#d9544f" stroke="#ffffff" d="M261.7428187381756,58.757417890485314A79.66666666666667,79.66666666666667,0,0,0,241.25377036276706,78.58121581147914L216.60144024984572,60.90711806605907A110,110,0,0,1,244.89175809036794,33.53534687807597Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#ffc100" d="M243.69191290140762,80.32920350058663A76.66666666666667,76.66666666666667,0,0,0,229.37350377395336,127.48150234685303" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#ffc100" stroke="#ffffff" d="M241.25377036276706,78.58121581147914A79.66666666666667,79.66666666666667,0,0,0,226.37507566076022,127.57860461259945L196.05763584958527,128.56041641070217A110,110,0,0,1,216.60144024984572,60.90711806605907Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#1693a5" d="M229.37350377395336,127.48150234685303A76.66666666666667,76.66666666666667,0,0,0,305.9759144567186,201.66666288331834" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#1693a5" stroke="#ffffff" d="M226.37507566076022,127.57860461259945A79.66666666666667,79.66666666666667,0,0,0,305.974971978938,204.6666627352743L305.9654424813789,234.99999457171762A110,110,0,0,1,196.05763584958527,128.56041641070217Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="306" y="115" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(2.2549,0,0,2.2549,-383.9902,-154.9804)" stroke-width="0.4434782608695652"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Chrome</tspan></text><text x="306" y="135" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(1.5972,0,0,1.5972,-182.7407,-75.8472)" stroke-width="0.6260869565217391"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text></svg></div>
-            </div>
-            <!-- /tile widget -->
-
-            <!-- tile body -->
-            <div class="tile-body p-0">
-
-                <div class="panel-group icon-plus" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default panel-transparent">
-                        <div class="panel-heading" role="tab" id="headingOne">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span><i class="fa fa-minus text-sm mr-5"></i> This Month</span>
-                                    <span class="badge pull-right bg-lightred">3</span>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body">
-                                <table class="table table-no-border m-0">
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Chrome</td>
-                                        <td>6985</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Other</td>
-                                        <td>2697</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Safari</td>
-                                        <td>3597</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Firefox</td>
-                                        <td>2145</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Internet Explorer</td>
-                                        <td>1854</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Opera</td>
-                                        <td>654</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-transparent">
-                        <div class="panel-heading" role="tab" id="headingTwo">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span><i class="fa fa-minus text-sm mr-5"></i> Last Month</span>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body">
-                                <table class="table table-no-border m-0">
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Chrome</td>
-                                        <td>6985</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Other</td>
-                                        <td>2697</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Safari</td>
-                                        <td>3597</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Firefox</td>
-                                        <td>2145</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Internet Explorer</td>
-                                        <td>1854</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Opera</td>
-                                        <td>654</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default panel-transparent">
-                        <div class="panel-heading" role="tab" id="headingThree">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span><i class="fa fa-minus text-sm mr-5"></i> This Year</span>
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="panel-body">
-                                <table class="table table-no-border m-0">
-                                    <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Chrome</td>
-                                        <td>6985</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Other</td>
-                                        <td>2697</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Safari</td>
-                                        <td>3597</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Firefox</td>
-                                        <td>2145</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Internet Explorer</td>
-                                        <td>1854</td>
-                                        <td><i class="fa fa-caret-down text-danger"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Opera</td>
-                                        <td>654</td>
-                                        <td><i class="fa fa-caret-up text-success"></i></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- /tile body -->
-
-        </section>
-        <!-- /tile -->
-
-    </div>
-    <!-- /col -->
-
-
+<!-- Top container -->
+<div class="w3-container w3-top w3-black w3-large w3-padding" style="z-index:4">
+    <button class="w3-btn w3-hide-large w3-padding-0 w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+    <span class="w3-right">Logo</span>
 </div>
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+    <div class="w3-container w3-row">
+        <div class="w3-col s4">
+            <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+        </div>
+        <div class="w3-col s8">
+            <span>Welcome, <strong>Mike</strong></span><br>
+            <a href="#" class="w3-hover-none w3-hover-text-red w3-show-inline-block"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-hover-none w3-hover-text-green w3-show-inline-block"><i class="fa fa-user"></i></a>
+            <a href="#" class="w3-hover-none w3-hover-text-blue w3-show-inline-block"><i class="fa fa-cog"></i></a>
+        </div>
+    </div>
+    <hr>
+    <div class="w3-container">
+        <h5>Dashboard</h5>
+    </div>
+    <a href="#" class="w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+    <a href="#" class="w3-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
+    <a href="#" class="w3-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
+    <a href="#" class="w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
+    <a href="#" class="w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
+    <a href="#" class="w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+    <a href="#" class="w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    <a href="#" class="w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+    <!-- Header -->
+    <header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+    </header>
+
+    <div class="w3-row-padding w3-margin-bottom">
+        <div class="w3-quarter">
+            <div class="w3-container w3-red w3-padding-16">
+                <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>52</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>Messages</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-blue w3-padding-16">
+                <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>99</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>Views</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-teal w3-padding-16">
+                <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>23</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>Shares</h4>
+            </div>
+        </div>
+        <div class="w3-quarter">
+            <div class="w3-container w3-orange w3-text-white w3-padding-16">
+                <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3>50</h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>Users</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-section">
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-third">
+                <h5>Regions</h5>
+                <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
+            </div>
+            <div class="w3-twothird">
+                <h5>Feeds</h5>
+                <table class="w3-table w3-striped w3-white">
+                    <tr>
+                        <td><i class="fa fa-user w3-blue w3-padding-tiny"></i></td>
+                        <td>New record, over 90 views.</td>
+                        <td><i>10 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-bell w3-red w3-padding-tiny"></i></td>
+                        <td>Database error.</td>
+                        <td><i>15 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-users w3-orange w3-text-white w3-padding-tiny"></i></td>
+                        <td>New record, over 40 users.</td>
+                        <td><i>17 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-comment w3-red w3-padding-tiny"></i></td>
+                        <td>New comments.</td>
+                        <td><i>25 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-bookmark w3-light-blue w3-padding-tiny"></i></td>
+                        <td>Check transactions.</td>
+                        <td><i>28 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-laptop w3-red w3-padding-tiny"></i></td>
+                        <td>CPU overload.</td>
+                        <td><i>35 mins</i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-share-alt w3-green w3-padding-tiny"></i></td>
+                        <td>New shares.</td>
+                        <td><i>39 mins</i></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="w3-container">
+        <h5>General Stats</h5>
+        <p>New Visitors</p>
+        <div class="w3-progress-container w3-grey">
+            <div id="myBar" class="w3-progressbar w3-green" style="width:25%">
+                <div class="w3-center w3-text-white">+25%</div>
+            </div>
+        </div>
+
+        <p>New Users</p>
+        <div class="w3-progress-container w3-grey">
+            <div id="myBar" class="w3-progressbar w3-orange" style="width:50%">
+                <div class="w3-center w3-text-white">50%</div>
+            </div>
+        </div>
+
+        <p>Bounce Rate</p>
+        <div class="w3-progress-container w3-grey">
+            <div id="myBar" class="w3-progressbar w3-red" style="width:75%">
+                <div class="w3-center w3-text-white">75%</div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="w3-container">
+        <h5>Countries</h5>
+        <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+            <tr>
+                <td>United States</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>UK</td>
+                <td>15.7%</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>5.6%</td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td>2.1%</td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td>1.9%</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>1.5%</td>
+            </tr>
+        </table><br>
+        <button class="w3-btn">More Countries  <i class="fa fa-arrow-right"></i></button>
+    </div>
+    <hr>
+    <div class="w3-container">
+        <h5>Recent Users</h5>
+        <ul class="w3-ul w3-card-4 w3-white">
+            <li class="w3-padding-16">
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+                <span class="w3-xlarge">Mike</span><br>
+            </li>
+            <li class="w3-padding-16">
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+                <span class="w3-xlarge">Jill</span><br>
+            </li>
+            <li class="w3-padding-16">
+                <span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+                <span class="w3-xlarge">Jane</span><br>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <div class="w3-container">
+        <h5>Recent Comments</h5>
+        <div class="w3-row">
+            <div class="w3-col m2 text-center">
+                <img class="w3-circle" src="/w3images/avatar3.png" style="width:96px;height:96px">
+            </div>
+            <div class="w3-col m10 w3-container">
+                <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+            </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m2 text-center">
+                <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
+            </div>
+            <div class="w3-col m10 w3-container">
+                <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="w3-container w3-dark-grey w3-padding-32">
+        <div class="w3-row">
+            <div class="w3-container w3-third">
+                <h5 class="w3-bottombar w3-border-green">Demographic</h5>
+                <p>Language</p>
+                <p>Country</p>
+                <p>City</p>
+            </div>
+            <div class="w3-container w3-third">
+                <h5 class="w3-bottombar w3-border-red">System</h5>
+                <p>Browser</p>
+                <p>OS</p>
+                <p>More</p>
+            </div>
+            <div class="w3-container w3-third">
+                <h5 class="w3-bottombar w3-border-orange">Target</h5>
+                <p>Users</p>
+                <p>Active</p>
+                <p>Geo</p>
+                <p>Interests</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 w3-light-grey">
+        <h4>FOOTER</h4>
+        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <!-- End page content -->
+</div>
+
+<script>
+    // Get the Sidenav
+    var mySidenav = document.getElementById("mySidenav");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidenav, and add overlay effect
+    function w3_open() {
+        if (mySidenav.style.display === 'block') {
+            mySidenav.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidenav.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidenav with the close button
+    function w3_close() {
+        mySidenav.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
 
 </body>
 </html>
+
