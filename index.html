@@ -5,6 +5,446 @@
     <title>Title</title>
 </head>
 <body>
+<div class="row">
+
+
+
+    <!-- col -->
+    <div class="col-md-8">
+
+        <!-- tile -->
+        <section class="tile">
+
+            <!-- tile header -->
+            <div class="tile-header bg-greensea dvd dvd-btm">
+                <h1 class="custom-font"><strong>Statistics </strong>Graph</h1>
+                <ul class="controls">
+                    <li>
+                        <a role="button" tabindex="0" class="pickDate">
+                            <span>October 4, 2016 - November 2, 2016</span>&nbsp;&nbsp;<i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+
+                        <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </a>
+
+                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                            <li>
+                                <a role="button" tabindex="0" class="tile-toggle">
+                                    <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                    <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0" class="tile-refresh">
+                                    <i class="fa fa-refresh"></i> Refresh
+                                </a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0" class="tile-fullscreen">
+                                    <i class="fa fa-expand"></i> Fullscreen
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                </ul>
+            </div>
+            <!-- /tile header -->
+
+            <!-- tile widget -->
+            <div class="tile-widget bg-greensea">
+                <div id="statistics-chart" style="height: 250px; padding: 0px; position: relative;"><canvas class="flot-base" width="612" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 612px; height: 250px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 30px; text-align: center;">JAN</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 78px; text-align: center;">FEB</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 124px; text-align: center;">MAR</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 174px; text-align: center;">APR</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 221px; text-align: center;">MAY</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 270px; text-align: center;">JUN</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 320px; text-align: center;">JUL</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 366px; text-align: center;">AUG</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 416px; text-align: center;">SEP</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 462px; text-align: center;">OCT</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 510px; text-align: center;">NOV</div><div style="position: absolute; max-width: 46px; top: 236px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 559px; text-align: center;">DEC</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div style="position: absolute; top: 210px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 14px; text-align: right;">0</div><div style="position: absolute; top: 157px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 7px; text-align: right;">50</div><div style="position: absolute; top: 105px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">100</div><div style="position: absolute; top: 53px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">150</div><div style="position: absolute; top: 1px; font-style: normal; font-variant: normal; font-weight: 400; font-stretch: normal; font-size: 11px; line-height: 13px; font-family: Lato, Arial, sans-serif; color: rgb(255, 255, 255); left: 1px; text-align: right;">200</div></div></div><canvas class="flot-overlay" width="612" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 612px; height: 250px;"></canvas><div class="legend"><table style="position:absolute;top:0px;right:6px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(224,93,111);overflow:hidden"></div></div></td><td class="legendLabel">Unique Visits</td><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(97,200,184);overflow:hidden"></div></div></td><td class="legendLabel">Page Views</td></tr></tbody></table></div></div>
+            </div>
+            <!-- /tile widget -->
+
+            <!-- tile body -->
+            <div class="tile-body">
+
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col -->
+                    <div class="col-md-8 col-sm-12">
+
+                        <h4 class="underline custom-font mb-20"><strong>Actual</strong> Statistics</h4>
+
+                        <!-- row -->
+                        <div class="row">
+                            <!-- col -->
+                            <div class="col-lg-4 text-center">
+                                <div class="easypiechart" data-percent="100" data-size="140" data-bar-color="#418bca" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
+
+                                    <i class="fa fa-usd fa-4x text-blue" style="line-height: 140px;"></i>
+
+                                    <canvas height="140" width="140"></canvas></div>
+                                <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-blue">6,175</strong> <small class="text-lg text-light text-default lt">Sales</small></p>
+                                <p class="text-light"><i class="fa fa-caret-up text-success"></i> 18% this month</p>
+                            </div>
+                            <!-- /col
+                            <!-- col -->
+                            <div class="col-lg-4 text-center">
+                                <div class="easypiechart" data-percent="75" data-size="140" data-bar-color="#e05d6f" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
+
+                                    <i class="fa fa-eye fa-4x text-lightred" style="line-height: 140px;"></i>
+                                    <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-lightred">8,213</strong> <small class="text-lg text-light text-default lt">Visits</small></p>
+                                    <p class="text-light"><i class="fa fa-caret-down text-warning"></i> 25% this month</p>
+                                    <canvas height="140" width="140"></canvas></div>
+                            </div>
+                            <!-- /col -->
+                            <!-- col -->
+                            <div class="col-lg-4 text-center">
+                                <div class="easypiechart" data-percent="46" data-size="140" data-bar-color="#16a085" data-scale-color="false" data-line-cap="round" data-line-width="4" style="width: 140px; height: 140px;">
+
+                                    <i class="fa fa-user fa-4x text-greensea" style="line-height: 140px;"></i>
+                                    <p class="text-uppercase text-elg mt-20 mb-0"><strong class="text-greensea">632</strong> <small class="text-lg text-light text-default lt">Users</small></p>
+                                    <p class="text-light"><i class="fa fa-caret-down text-danger"></i> 61% this month</p>
+                                    <canvas height="140" width="140"></canvas></div>
+                            </div>
+                            <!-- /col -->
+                        </div>
+                        <!-- /row -->
+
+                    </div>
+                    <!-- /col -->
+
+
+
+                    <!-- col -->
+                    <div class="col-md-4 col-sm-12">
+
+                        <h4 class="underline custom-font"><strong>Visitors</strong> Statistics</h4>
+
+                        <div class="progress-list">
+                            <div class="details">
+                                <div class="title">America</div>
+                                <div class="description">visitor from america</div>
+                            </div>
+                            <div class="status pull-right">
+                                <span>40</span>%
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="progress-xs not-rounded progress">
+                                <div class="progress-bar progress-bar-dutch" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-list">
+                            <div class="details">
+                                <div class="title">Europe</div>
+                                <div class="description">visitor from europe</div>
+                            </div>
+                            <div class="status pull-right">
+                                <span>38</span>%
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="progress-xs not-rounded progress">
+                                <div class="progress-bar progress-bar-greensea" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                                    <span class="sr-only">38%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-list">
+                            <div class="details">
+                                <div class="title">Asia</div>
+                                <div class="description">visitor from asia</div>
+                            </div>
+                            <div class="status pull-right">
+                                <span>12</span>%
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="progress-xs not-rounded progress">
+                                <div class="progress-bar progress-bar-lightred" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
+                                    <span class="sr-only">12%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-list">
+                            <div class="details">
+                                <div class="title">Africa</div>
+                                <div class="description">visitor from africa</div>
+                            </div>
+                            <div class="status pull-right">
+                                <span>7</span>%
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="progress-xs not-rounded progress">
+                                <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%">
+                                    <span class="sr-only">7%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-list">
+                            <div class="details">
+                                <div class="title">Other</div>
+                                <div class="description">visitor from other</div>
+                            </div>
+                            <div class="status pull-right">
+                                <span>6</span>%
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="progress-xs not-rounded progress">
+                                <div class="progress-bar progress-bar-hotpink" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%">
+                                    <span class="sr-only">6%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /col -->
+
+
+
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /tile body -->
+
+        </section>
+        <!-- /tile -->
+
+    </div>
+    <!-- /col -->
+
+
+
+    <!-- col -->
+    <div class="col-md-4">
+
+        <!-- tile -->
+        <section class="tile" fullscreen="isFullscreen02">
+
+            <!-- tile header -->
+            <div class="tile-header dvd dvd-btm">
+                <h1 class="custom-font"><strong>Browser </strong>Usage</h1>
+                <ul class="controls">
+                    <li class="dropdown">
+
+                        <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </a>
+
+                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                            <li>
+                                <a role="button" tabindex="0" class="tile-toggle">
+                                    <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                    <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0" class="tile-refresh">
+                                    <i class="fa fa-refresh"></i> Refresh
+                                </a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0" class="tile-fullscreen">
+                                    <i class="fa fa-expand"></i> Fullscreen
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="remove"><a role="button" tabindex="0" class="tile-close"><i class="fa fa-times"></i></a></li>
+                </ul>
+            </div>
+            <!-- /tile header -->
+
+            <!-- tile widget -->
+            <div class="tile-widget">
+                <div id="browser-usage" style="height: 250px"><svg height="250" version="1.1" width="612" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.65625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#00a3d8" d="M306,201.66666666666669A76.66666666666667,76.66666666666667,0,0,0,382.62571285773925,127.50557514776123" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#00a3d8" stroke="#ffffff" d="M306,204.66666666666669A79.66666666666667,79.66666666666667,0,0,0,385.62411031738986,127.60361939267362L420.9385692866088,128.75836272164184A115,115,0,0,1,306,240Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#2fbbe8" d="M382.62571285773925,127.50557514776123A76.66666666666667,76.66666666666667,0,0,0,333.00430527411913,53.24663579705856" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#2fbbe8" stroke="#ffffff" d="M385.62411031738986,127.60361939267362A79.66666666666667,79.66666666666667,0,0,0,334.06099548049775,50.43889545868258L344.74530756721447,22.049520926214456A110,110,0,0,1,415.94124018719106,128.59495564678787Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#72cae7" d="M333.00430527411913,53.24663579705856A76.66666666666667,76.66666666666667,0,0,0,263.4094071538928,61.251908430174154" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#72cae7" stroke="#ffffff" d="M334.06099548049775,50.43889545868258A79.66666666666667,79.66666666666667,0,0,0,261.7428187381756,58.757417890485314L244.89175809036794,33.53534687807597A110,110,0,0,1,344.74530756721447,22.049520926214456Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#d9544f" d="M263.4094071538928,61.251908430174154A76.66666666666667,76.66666666666667,0,0,0,243.69191290140762,80.32920350058663" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#d9544f" stroke="#ffffff" d="M261.7428187381756,58.757417890485314A79.66666666666667,79.66666666666667,0,0,0,241.25377036276706,78.58121581147914L216.60144024984572,60.90711806605907A110,110,0,0,1,244.89175809036794,33.53534687807597Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#ffc100" d="M243.69191290140762,80.32920350058663A76.66666666666667,76.66666666666667,0,0,0,229.37350377395336,127.48150234685303" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#ffc100" stroke="#ffffff" d="M241.25377036276706,78.58121581147914A79.66666666666667,79.66666666666667,0,0,0,226.37507566076022,127.57860461259945L196.05763584958527,128.56041641070217A110,110,0,0,1,216.60144024984572,60.90711806605907Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#1693a5" d="M229.37350377395336,127.48150234685303A76.66666666666667,76.66666666666667,0,0,0,305.9759144567186,201.66666288331834" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#1693a5" stroke="#ffffff" d="M226.37507566076022,127.57860461259945A79.66666666666667,79.66666666666667,0,0,0,305.974971978938,204.6666627352743L305.9654424813789,234.99999457171762A110,110,0,0,1,196.05763584958527,128.56041641070217Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="306" y="115" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(2.2549,0,0,2.2549,-383.9902,-154.9804)" stroke-width="0.4434782608695652"><tspan dy="5.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Chrome</tspan></text><text x="306" y="135" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(1.5972,0,0,1.5972,-182.7407,-75.8472)" stroke-width="0.6260869565217391"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text></svg></div>
+            </div>
+            <!-- /tile widget -->
+
+            <!-- tile body -->
+            <div class="tile-body p-0">
+
+                <div class="panel-group icon-plus" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default panel-transparent">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span><i class="fa fa-minus text-sm mr-5"></i> This Month</span>
+                                    <span class="badge pull-right bg-lightred">3</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <table class="table table-no-border m-0">
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Chrome</td>
+                                        <td>6985</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Other</td>
+                                        <td>2697</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Safari</td>
+                                        <td>3597</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Firefox</td>
+                                        <td>2145</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Internet Explorer</td>
+                                        <td>1854</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Opera</td>
+                                        <td>654</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-transparent">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span><i class="fa fa-minus text-sm mr-5"></i> Last Month</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <table class="table table-no-border m-0">
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Chrome</td>
+                                        <td>6985</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Other</td>
+                                        <td>2697</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Safari</td>
+                                        <td>3597</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Firefox</td>
+                                        <td>2145</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Internet Explorer</td>
+                                        <td>1854</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Opera</td>
+                                        <td>654</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-transparent">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span><i class="fa fa-minus text-sm mr-5"></i> This Year</span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <table class="table table-no-border m-0">
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Chrome</td>
+                                        <td>6985</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Other</td>
+                                        <td>2697</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Safari</td>
+                                        <td>3597</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Firefox</td>
+                                        <td>2145</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Internet Explorer</td>
+                                        <td>1854</td>
+                                        <td><i class="fa fa-caret-down text-danger"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Opera</td>
+                                        <td>654</td>
+                                        <td><i class="fa fa-caret-up text-success"></i></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /tile body -->
+
+        </section>
+        <!-- /tile -->
+
+    </div>
+    <!-- /col -->
+
+
+</div>
 
 </body>
 </html>
