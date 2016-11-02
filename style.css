@@ -20,3 +20,8 @@
     white-space:nowrap;
     margin:0.1em 0
 }
+
+#map{
+    height: 600px;
+    margin: 0;
+}
