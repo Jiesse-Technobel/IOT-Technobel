@@ -26,12 +26,12 @@
         function initMap() {
             // Create a map object and specify the DOM element for display.
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 37.7831, lng: -122.4039},
+                center: {lat: 50.5039, lng: 4.4699},
                 scrollwheel: true,
                 zoom: 12
             });
-            var markerOptions = {
-                position: new google.maps.LatLng(37.7831, -122.4039)
+           var markerOptions = {
+              position: new google.maps.LatLng(50.5039,4.4699)
             };
             var marker = new google.maps.Marker(markerOptions);
             marker.setMap(map);
