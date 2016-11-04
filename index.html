@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="geoxml3.js"></script>
-<link rel="stylesheet" href="style.css">
-<style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="geoxml3.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("vitesseVent", {
+                title:{
+                    text: "Vitesse du vent"
+                },
+                data: [
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "doughnut",
+                        dataPoints: [
+                            { label: "apple",  y: 10  },
+                            { label: "orange", y: 15  },
+                            { label: "banana", y: 25  },
+                            { label: "mango",  y: 50  },
+                            { label: "grape",  y: 28  },
+                            { label: "test",   y: 50  }
+                        ]
+                    }
+                ]
+            });
+            var chart2 = new CanvasJS.Chart("tempAir", {
+                title:{
+                    text: "Température de l'air"
+                },
+                data: [
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "spline",
+                        dataPoints: [
+                            { label: "apple",  y: 10  },
+                            { label: "orange", y: 15  },
+                            { label: "banana", y: 25  },
+                            { label: "mango",  y: 50  },
+                            { label: "grape",  y: 28  },
+                            { label: "test",   y: 50  }
+                        ]
+                    }
+                ]
+            });
+            var chart3 = new CanvasJS.Chart("hauteurVague", {
+                title:{
+                    text: "Hauteur des vagues"
+                },
+                data: [
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "line",
+                        dataPoints: [
+                            { label: "apple",  y: 10  },
+                            { label: "orange", y: 15  },
+                            { label: "banana", y: 25  },
+                            { label: "mango",  y: 50  },
+                            { label: "grape",  y: 28  },
+                            { label: "test",   y: 50  }
+                        ]
+                    }
+                ]
+            });
+            var chart4 = new CanvasJS.Chart("tempEau", {
+                title:{
+                    text: "Température de l'eau"
+                },
+                data: [
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "splineArea",
+                        dataPoints: [
+                            { label: "apple",  y: 10  },
+                            { label: "orange", y: 15  },
+                            { label: "banana", y: 25  },
+                            { label: "mango",  y: 50  },
+                            { label: "grape",  y: 28  },
+                            { label: "test",   y: 50  }
+                        ]
+                    }
+                ]
+            });
+            chart.render();
+            chart2.render();
+            chart3.render();
+            chart4.render();
+        }
+    </script>
+</head>
 <body class="w3-light-grey">
 
 <!-- !PAGE CONTENT! -->
@@ -31,8 +119,8 @@
             // Create a map object and specify the DOM element for display.
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 50.5039, lng: 4.4699},
-                scrollwheel: true,
-                zoom: 7
+                scrollwheel: false,
+                zoom: 5
             });
 
             var parser = new geoXML3.parser({map: map, createMarker: createM});
@@ -97,6 +185,13 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="resultats">
+        <div class="graph" id="vitesseVent" style="margin: 10px; height: 400px; width: 45%;"></div>
+        <div class="graph" id="tempAir" style="margin: 10px; height: 400px; width: 45%;"></div>
+        <div class="graph" id="hauteurVague" style="margin: 10px; height: 400px; width: 45%;"></div>
+        <div class="graph" id="tempEau" style="margin: 10px; height: 400px; width: 45%;"></div>
     </div>
 
     <!-- End page content -->
