@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="geoxml3.js"></script>
 <link rel="stylesheet" href="style.css">
 <style>
     html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -33,11 +34,24 @@
                 scrollwheel: true,
                 zoom: 7
             });
-           var markerOptions = {
-              position: new google.maps.LatLng(51.3464,3.2859)
-            };
-            var marker = new google.maps.Marker(markerOptions);
-            marker.setMap(map);
+
+            var parser = new geoXML3.parser({map: map, createMarker: createM});
+            parser.parse('Navigate.kml');
+
+            function createM(placemark){
+                console.log(placemark);
+                var markerOptions = {
+                    optimized: false,
+                    position: placemark.latlng,
+                    map: map
+                };
+                var marker = new google.maps.Marker(markerOptions);
+                google.maps.event.addListener(marker, 'click', function(){
+                    console.log(placemark.latlng.lat());
+                });
+            }
+
+
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaGvuJiGnbPaRl2y29c102oiQRAPB2b38&callback=initMap" async defer></script>
