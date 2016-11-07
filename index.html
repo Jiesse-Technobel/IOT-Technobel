@@ -102,7 +102,7 @@
         }
     </script>
 </head>
-<body class="w3-light-grey">
+<body class="w3-black">
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-top:43px;">
@@ -147,25 +147,66 @@
 
     <div class="w3-row-padding w3-margin-bottom">
         <div class="w3-quarter">
-            <div class="w3-container w3-red w3-padding-16">
-                <div class="w3-clear"></div>
-                <h4>Vitesse du Vent</h4>
-            </div>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Vitesse du vent</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="graph" id="vitesseVent" style="margin: 10px; height: 400px; width: 45%;"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+
+
         <div class="w3-quarter">
-            <div class="w3-container w3-blue w3-padding-16">
-                <div class="w3-clear"></div>
-                <h4>T° de l'air</h4>
-            </div>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">T° de l'air</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="graph" id="tempAir" style="margin: 10px; height: 400px; width: 45%;"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+
+
         <div class="w3-quarter">
-            <div class="w3-container w3-teal w3-padding-16">
-                <div class="w3-clear"></div>
-                <h4>Hauteur des vagues</h4>
-            </div>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Hauteur Vagues</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="graph" id="hauteurVague" style="margin: 10px; height: 400px; width: 45%;"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+
+
         <div class="w3-quarter">
-            <div class="w3-container w3-orange w3-text-white w3-padding-16">
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">T° de l'eau</button>
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog modal-lg">
@@ -182,16 +223,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
 
+    <!--
     <div id="resultats">
         <div class="graph" id="vitesseVent" style="margin: 10px; height: 400px; width: 45%;"></div>
         <div class="graph" id="tempAir" style="margin: 10px; height: 400px; width: 45%;"></div>
         <div class="graph" id="hauteurVague" style="margin: 10px; height: 400px; width: 45%;"></div>
         <div class="graph" id="tempEau" style="margin: 10px; height: 400px; width: 45%;"></div>
     </div>
+    -->
 
     <!-- End page content -->
 </div>
